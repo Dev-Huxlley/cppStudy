@@ -1,4 +1,5 @@
 ﻿#include <iostream>
+#include <string>
 using namespace std;
 
 // 문자와 문자열
@@ -49,6 +50,14 @@ wchar_t wch = L'안';
 
 char str2[] = "Hello World";
 
+string name = "홍길동";
+string greeting = "안녕하세요, " + name + "님!";
+string greeting2 = "Hello Seo!";
+
+char testchar1[100] = "Hello";
+char testchar2[100] = "World";
+
+
 int main()
 {
     char str[] = { 'h', 'e', 'l', 'l', 'o', '\0'};
@@ -64,4 +73,10 @@ int main()
 
     cout << str << endl;
     cout << str2 << endl;
+
+    cout << greeting2.length() << endl;      // 문자열 길이
+    cout << greeting2[0] << endl;           // 첫 번째 문자
+
+    cout << greeting2 << endl;
+
 }
